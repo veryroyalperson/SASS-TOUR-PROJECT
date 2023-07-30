@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="navbar-logo">Adventure</h1>
+
+      <ul class="navbar-links">
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">Tours</a></li>
+        <li><a href="">Explore</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="" class="ctn">Contact</a></li>
+      </ul>
+
+      <img src="./img/menu-btn.png" alt="" class="navbar-menu-btn" />
+    </nav>
+
+    <header class="header">
+      <section class="contact">
+        <div class="contact-content">
+          <h2>Contact Us</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+            placeat nihil nostrum sint iusto error aspernatur esse neque, et
+            quasi?
+          </p>
+        </div>
+        <div class="container">
+          <div class="container-contactInfo">
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="text">
+                <h3>Adres</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur,<br />
+                  adipisicing elit. Assumenda, <br />pariatur.
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="text">
+                <h3>E-Mail</h3>
+                <p>info@udemig.com</p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="text">
+                <h3>Telefon</h3>
+                <p>555-555-55-55</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-contactForm">
+            <form action="">
+              <h2>Send Message</h2>
+              <div class="inputBox">
+                <input type="text" required/>
+                <span>Name Surname</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" required />
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <textarea required name="" id="" cols="30" rows="10"></textarea>
+                <span>Message</span>
+              </div>
+              <div class="inputBox">
+                <input type="submit" value="Gönder" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="footer">
+      <p>
+        123 Fifth Avenue, NY 10160,New York,USA | Phone : 555-555-555 | Email:
+        contact@example.com
+      </p>
+      <p>Copyright 2020 Outdoor Adventure</p>
+    </section>
+
+    <script>
+      const menubtn = document.querySelector(".navbar-menu-btn");
+      const menulinks = document.querySelector(".navbar-links");
+
+      menubtn.addEventListener("click", () => {
+        menulinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
